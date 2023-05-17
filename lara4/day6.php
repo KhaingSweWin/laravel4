@@ -28,8 +28,8 @@
                         <div class="col-md-4">
                             <div>
                                 <label for="" class="form-label">လျောက်ထားသူအမည်( မြန်မာ) </label>
-                                <input type="text" name="name_mm" id="" class="form-control" >
-                                <span class="text-danger"></span>
+                                <input type="text" name="name_mm" id="name_mm" class="form-control focused" autofocus>
+                                <span class="text-danger" id='name_error'></span>
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -55,10 +55,14 @@
                         </div>
                         <div class="col-md-4">
                             <label for="">Marital Status</label><br>
-                            <input type="radio" name="marital" id="" value="marriage" class="form-check-input"> <label for="" class="form-check-label">Marriage</label>
-                            <input type="radio" name="marital" id="" value="single" class="form-check-input"> <label for="" class="form-check-label">Single</label>
-                            <input type="radio" name="marital" id="" value="other" class="form-check-input"> <label for="" class="form-check-label">Other</label>
+                            <input type="radio" name="marital" id="marriage" value="marriage" class="form-check-input"> <label for="" class="form-check-label">Marriage</label>
+                            <input type="radio" name="marital" id="single" value="single" class="form-check-input"> <label for="" class="form-check-label">Single</label>
+                            <input type="radio" name="marital" id="other" value="other" class="form-check-input"> <label for="" class="form-check-label">Other</label>
+                            <div id="other_marital" class="d-none">
+                            <input type="text" name="other_marital" id="text_marital" class="form-control">
+                            </div>
                         </div>
+                        
                         <div class="col-md-4">
                             <label for="">Gender</label><br>
                             <input type="radio" name="gender" id="" value="male" class="form-check-input"> <label for="" class="form-check-label">Male</label>
